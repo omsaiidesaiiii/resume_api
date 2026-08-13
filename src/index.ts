@@ -1,7 +1,10 @@
 import express from "express"
+import resumeRouter from "./routes/resume.js"
 
 const app=express()
 const PORT=4000
+
+app.use('/api/resumes',resumeRouter)
 
 app.get('/',(req,res)=>{
     res.status(200).json({
