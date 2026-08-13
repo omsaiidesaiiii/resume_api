@@ -24,4 +24,3 @@ Return ONLY valid JSON matching this schema:
 ${JSON.stringify(schema)}`;
 }
 
-console.log(JSON.stringify(z.toJSONSchema(ResumeSchema), null, 2));
