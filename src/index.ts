@@ -5,7 +5,7 @@ import swaggerUi from "swagger-ui-express";
 import { openapiSpec } from "./docs/openapiSpec.js";
 
 const app = express();
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 
 app.use("/api/resumes", resumeRouter);
 
